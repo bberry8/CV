@@ -1,18 +1,18 @@
 ---
-name: Evan R
-surname: Muise
-position: "MSc Student - Remote Sensing and Conservation"
-address: "University of British Columbia, Vancouver"
-profilepic: "./img/me.jpg"
-phone: +902 266 3688
-email: "evan.muise@ubc.ca"
-github: emuise
-twitter: evanmuise
-orcid: 0000-0003-3404-3220
+name: Bay
+surname: Berry
+position: "MSc Student - Laboratoire de Dynamique et Gestion Intégrée des Zones Côtières"
+address: "Université du Québec à Rimouski, Québec"
+profilepic: "./img/bay.jpg"
+phone: +902 997 1894
+email: "bay.berry@uqar.ca"
+github: bberry8
+orcid: 0000-0001-8865-9800
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 414141
 docname: CV
 output: vitae::awesomecv
+lang: fr
 editor_options: 
   chunk_output_type: console
 ---
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE)
 
 
-pkgs <- c('vitae' ,'here' ,'tinytex' ,'tibble' ,'glue' ,'rmarkdown' ,'dplyr', 'readr' ,'yaml')
+pkgs <- c('vitae' ,'here' ,'tinytex' ,'tibble' ,'glue' ,'rmarkdown' ,'dplyr', 'readr' ,'yaml', 'r2symbols')
 xfun::pkg_attach2(pkgs)
 
 packages <- c('vitae'     # The CV's LaTeX Template
@@ -34,6 +34,7 @@ packages <- c('vitae'     # The CV's LaTeX Template
              ,'tidyverse' # Needed for bind_rows and whatever
              ,'scholar'   # Updating publications from google scholar
              ,'kableExtra'# Adding technicalskills table
+             ,'r2symbols'
             )
 library(magrittr)
 # Install packages not yet installed
@@ -47,6 +48,20 @@ lapply(packages, library, character.only = TRUE) %>%
   invisible()
 
 source(file = here("r","data.r"))
+
+```
+
+# Education
+
+```{r EDUCATION}
+education %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
+    where = where, .protect = F
+  )
 
 ```
 
@@ -65,19 +80,6 @@ experience %>%
 
 ```
 
-# Education
-
-```{r EDUCATION}
-education %>%
-  detailed_entries(
-    with = title,
-    what = unit,
-    why = detail,
-    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}",.na = ""),
-    where = where, .protect = F
-  )
-
-```
 \pagebreak
 
 # Skills
@@ -85,23 +87,11 @@ education %>%
 \begin{cvskills}
   \cvskill
     {Data Science}
-    {R, Python, ArcGIS, ArcPy, big data}
+    {R, ArcGIS, QGIS}
 
   \cvskill
     {Research}
-    {Protected area design and monitoring, forest structure and productivity, reproducibility, geospatial analysis}
-    
-  \cvskill
-    {Collaboration}
-    {Experience working with academic, indigenous, and government groups}
-
-  \cvskill
-    {Writing}
-    {Scientific publications, funding grants, reproducible reporting (Rmarkdown, bookdown)}
-    
-  \cvskill
-    {Communication}
-    {Confident public speaker, reproducible graphics and maps}  
+    {Coastal geomorphology, permafrost, geospatial analysis}
 
   \cvskill
     {Languages}
@@ -123,7 +113,7 @@ awards %>%
 
 ```
 
-# Journal Articles
+# Publications and Presentations
 
 ```{r JOUNRALARTICLES}
 bib <- bibliography_entries("publications.bib") %>%
@@ -133,19 +123,4 @@ bib$`container-title` <- str_to_sentence(bib$`container-title`, locale = "en")
 
 bib
   
-```
-
-# Presentations
-
-```{r PRESENTATIONS}
-
-presentations %>%
-  detailed_entries(
-    with = title,
-    what = unit,
-    why = detail,
-    when = glue::glue("{startMonth} {startYear}",.na = ""),
-    where = where, .protect = F
-  )
-
 ```

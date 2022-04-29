@@ -1,62 +1,68 @@
 
 education <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "University of British Columbia", "MSc Remote Sensing and Conservation", "June", 2020, "Present", NA, "Vancouver, BC",
-    "Monitoring Forest Structural Integrity Across a Range of Regional Ecosystems",
-    "Dalhousie University", "BSc Environmental Science (Hons)", "September", 2015, "May", 2020, "Halifax, NS",
-    "Emerging Hot Spot Analysis and Forests: A Case Study on the Hemlock Woolly Adelgid’s Invasion into Nova Scotia using Fine Spatial Resolution Satellite Imagery."
+    "Université du Québec à Rimouski", "MSc Geography", "September", 2020, "Present", NA, "Rimouski, QC",
+    "Sub-seasonal sediment flux from cold-temperate coastal cliffs: the contribution of cryogenic processes to total erosion at Rivière-Saint-Jean, Quebec",
+    "Dalhousie University", "BSc Earth Sciences (Honours)", "September", 2016, "May", 2020, "Halifax, NS",
+    "Quantifying impacts of spatial resolution on pixel and object-based
+methods of image classification: A case study of identifying estuarine morphology
+in Cobequid Bay, Nova Scotia, Canada"
     )
-
-
-skills <- tribble(
-    ~area, ~skills,
-    "Project Management", "Effective Planning, Organization, Communication, Implementation",
-    "Technical Writing", "Publications, Official Reports, Funding Grants",
-    "Data Analytics", "R, Management, Manipulation, Visualization, Interpretation",
-    "Visual Communitation", "Effective Scientific Graphics and Design",
-)
 
 awards <- tribble(
     ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Undergraduate Research Funding", "NSERC USRA", 2018, "Halifax, NS", "Funding for Urban Forestry Summer Internship with REMLab"
+    "Northern Scientific Training Fund", "Polar Knowledge Canada", 2020, NA, NA,
+    "Graduate Entrance Scholarship", "Université du Québec à Rimouski", 2020, "Rimouski, QC", NA,
+    "First Class Honours and University Medal in Earth Sciences", "Dalhousie University", 2020, "Halifax, NS", NA,
+    "MacEachern-Ponsford Award", "Dalhousie University Dept. of Earth Sciences",  2018, "Halifax, NS", NA,
+     "Barlow Award", "Dalhousie University Dept. of Earth Sciences", 2018, "Halifax, NS", NA,
+    "Undergraduate Entrance Scholarship", "Dalhousie University", 2017, "Halifax, NS", NA
+    
 )
 
 experience <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "MSc Student", "Faculty of Forestry (UBC)", "June", 2020, "Present", NA, "Vancouver, BC",
-    "Monitoring Forest Structural Integrity Across a Range of Regional Ecosystems. \\begin{itemize}
-        \\item Identified placement bias in the British Columbian protected area network for ecosystem and land cover classes
-        \\item Identified missing forest structures in the British Columbian protected area network across a range of ecosystems
-    \\end{itemize}",
-    "Graduate Teaching Assistant", "Faculty of Forestry (UBC)", "September", 2020, "Present", NA, "Vancouver, BC",
-    "Leading \\& supervising applied exercises to guide student knowledge of remote sensing and coding concepts. \\begin{itemize}
-        \\item GEM 530 - Geospatial Data Analysis (Fall 2020)
-        \\item CONS 127 - Observing the Earth from Space (Spring 2021)
-        \\item CONS 340 - Introduction to Geographic Information Systems for Forestry and Conservation (Fall 2021)
-        \\item CONS127 - Observing the Earth from Space (Head TA; Spring 2022)
-    \\end{itemize}",
-    "Teaching Assistant", "Department of Earth and Environmental Science (Dalhousie)", "January", 2020, "May", 2020, "Halifax, NS",
-    "Leading \\& supervising applied exercises to guide student knowledge of environmental issues in the earth sciences. \\begin{itemize}
-        \\item ENVS2410 - Environmental Issues in Earth Sciences
-        \\item Introduced and aided students with activities related to mapping and environmental contaminants.
-    \\end{itemize}",
-    "Junior Program Officer (PM-01)", "Indigenous Partnerships Office - West (NRCan)", "September", 2018, "May", 2019, "Vancouver, BC",
-    "\\begin{itemize}
-        \\item Report Preparation
-        \\item Data Maintenance and Cleaning
-        \\item Liasions with Indigenous Groups
-    \\end{itemize}",
-    "Undergrad Research Assistant", "REMLab (Dalhousie University)", "May", 2018, "August", 2018, "Halifax, NS",
-    "Organized and conducted urban forestry field campaigns. \\begin{itemize}
-        \\item Data Collection, Entry, Cleaning, and Analysis
-        \\item Public Outreach Regarding Urban Forests
-    \\end{itemize}"
-)
-
-presentations <- tribble(
-    ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "Documenting Structural Land Cover Change and Disturbance across Provincial BC Parks for Biodiversity Assessment", "BC Parks Living Lab Colloquium", "December", 2020, NA, NA, "Online",
-    NA,
+    
+    "Researcher \\& Field Assistant", "Hamlet of Tuktoyaktuk", "June", 2021, "September", 2021, "Tuktoyaktuk, NT",
+    "Prepared website content to communicate climate change impacts on the community of Tuktoyaktuk",
+    "Researcher \\& Field Assistant", "Hamlet of Tuktoyaktuk", "June", 2021, "September", 2021, "Tuktoyaktuk, NT",
+    "Assisted in field outings and training sessions for the Tuktoyaktuk Climate Change Resiliency Project",
+    "Researcher \\& Field Assistant", "Hamlet of Tuktoyaktuk", "June", 2021, "September", 2021, "Tuktoyaktuk, NT", "Assisted in UAV surveys, water and sediment sampling, and various other field activities in the Mackenzie Delta-Beaufort Sea coastal region",
+    "Researcher \\& Field Assistant", "Hamlet of Tuktoyaktuk", "June", 2021, "September", 2021, "Tuktoyaktuk, NT", "Prepared submission to the Disaster Mitigation and Adaptation Fund",
+    
+    "Teaching Assistant", "Dalhousie Integrated Science Program", "January", 2020, "April", 2020, "Halifax, NS",
+    "Assisted during labs for the Earth Sciences component of the Dalhousie Integrated Science Program",
+    
+    "Research Assistant", "Dalhousie University Marine Affairs Program", "January", 2020, "April", 2020, "Halifax, NS",
+    "Prepared oyster samples for a range of tests for the investigation of trophic and ecosystem effects via stable isotopes, lipid analyses, and chlorophyll-a extraction and measurement",
+    
+    "Research Assistant", "Dalhousie University Dept. of Oceanography", "August", 2019, "December", 2019, "Halifax, NS",
+    "Prepared seaweed (Chondrus crispus) samples for nitrogen content and isotopic analysis; included subsampling, drying, crushing, weighing, and preparing for submission to lab for analysis",
+    "Research Assistant", "Dalhousie University Dept. of Oceanography", "August", 2019, "December", 2019, "Halifax, NS",'Assisted with installation and collection of sample growth stations, in the field and lab',
+    
+    "GIS Technician \\& Field Assistant", "Natural Resources Canada", "January", 2019, "August", 2019, "Dartmouth, NS",
+    "Processed and interpreted historical images, Unmanned Aerial Vehicle (UAV) surveys, and environmental records to produce reports relating to long-term weather and erosion conditions on the Beaufort Sea coast and flood risk in Tuktoyaktuk, Northwest Territories",
+    
+    "GIS Technician \\& Field Assistant", "Natural Resources Canada", "January", 2019, "August", 2019, "Dartmouth, NS",
+    "Assisted in UAV surveys, geophysical and chemical sampling, and various other field activities in the Mackenzie Delta-Beaufort Sea coastal region" ,
+    
+    "GIS Technician \\& Field Assistant", "Natural Resources Canada", "January", 2019, "August", 2019, "Dartmouth, NS",
+    "Assisted individuals with the use of ArcGIS StoryMaps and QGIS",
+    
+    
+    "Research Assistant", "Dalhousie University Dept. of Earth and Environmental Sciences", "September", 2018, "December", 2018, "Halifax, NS",
+    "Planned and conducted collection of mussels (Mytilus edulis) and water samples from coastal sites around mainland Nova Scotia",
+    "Research Assistant", "Dalhousie University Dept. of Earth and Environmental Sciences", "September", 2018, "December", 2018, "Halifax, NS",
+    "Prepared samples for isotopic analysis",
+    
+    "Interpreter", "Joggins Fossil Center", "May", 2018, "August", 2018, "Joggins, NS", 
+    "Guided 30-minute and 2-hour tours of the Joggins Fossil Centre museum and fossil site in English and French, with emphasis on the pillars of the site's UNESCO World Heritage Site designation; the fossil record, the value of the cliffs, and the history of scientific discovery", 
+        
+        "Interpreter", "Joggins Fossil Center", "May", 2018, "August", 2018, "Joggins, NS",
+       "Communicated with visitors, coordinated tour bookings, and answered inquiries about the site via phone, e-mail, and in person",
+    
+    "Interpreter", "Joggins Fossil Center", "May", 2018, "August", 2018, "Joggins, NS",
+    "Performed transactions for admission and store purchases"
 )
 
 
